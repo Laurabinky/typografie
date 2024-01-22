@@ -1,0 +1,286 @@
+/**************/
+/* voor het font */
+/**************/
+/* @font-face {
+    font-family: "mason";
+    src: url("ncnd.woff2");
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 250 900;
+  } */
+
+/**************/
+/* CSS basics */
+/**************/
+/* *, *::after, *::before {
+    box-sizing:border-box;  
+  } */
+
+
+    /*********************/
+  /* CUSTOM PROPERTIES */
+  /*********************/
+ :root { 
+    --background-color: #000;
+    --text-color: #fff;
+    --fold: 35; /* hoe breed mag een paragraaf zijn */
+    --white-space:5vw;
+ }
+
+/*
+  html{
+    scroll-behavior: smooth;
+    font-family: 'mason-serif''Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+  }
+
+  body {
+    margin: 0;
+    font-size: 1.4rem;
+    color:var(--text-color);
+    background-color:var(--background-color);
+
+  } */
+
+  /* body main h1{
+    text-align: center;
+    font-size: 8vw;
+    margin-bottom: .5em;
+  }
+
+  .styling-text{
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto auto;
+    max-width: calc(var(--fold) * 1rem);
+    width: 100%;
+    margin: 0 auto 1rem;
+
+  }
+  img{
+    display: block;
+    max-width: 100%;
+  } */
+/* 
+.paragraaf1{
+    /* display: grid;
+    grid-template-columns: auto auto;
+     */
+    /* display: flex;
+    flex-flow: column;
+    margin:0 0 var(--white-space)
+
+
+} */ 
+
+
+/* 
+   /*********************/
+  /* Animatie woorden */
+  /*********************/
+/* @keyframes woorden {
+	0% {
+		rotate: 2deg;
+		translate: 0 1em;
+	}
+	100% {
+		translate: 0 -1em;
+		rotate: -2deg;
+	}
+} */ 
+
+/* .animatie p {
+	text-align: center;
+	display: flex;
+	gap: .3em;
+	font-size: 9vw;
+	line-height: .8;
+	margin: .1em 0;
+}
+.animatie span {
+	animation-name: woorden;
+	animation-duration: 13s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.animatie span:nth-of-type(2) {
+	animation-duration: 11s;
+	animation-delay: -5s;
+}
+.animatie span:nth-of-type(3) {
+	animation-delay: -11s;
+	animation-duration: 17s;
+} */ 
+
+/* *, *::after, *::before {
+    box-sizing:border-box;  
+  } */
+
+  /******************************/
+/* ALGEMENE CUSTOM PROPERTIES */
+/******************************/
+/* :root {
+    --main-color:#333;
+    --background-color:#ccc;
+    --background-highlight-color:#fff;
+  
+    --white-space:5vw;
+  } */
+
+  /********************/
+/* ALGEMENE STIJLEN */
+/********************/
+/* body {
+    margin:0;
+    padding:var(--white-space);
+    background-color:var(--background-color);
+    font-family:'Saira', sans-serif;
+    color:var(--main-color);
+  }
+  
+  /* titel */
+  /* body > h1 { 
+    margin:calc(var(--white-space) / 2) 0 calc(var(--white-space) / 4);
+    line-height:1.125em;
+  } */
+  
+  /* instructie */
+  /* body main > p {
+    max-width:28em;
+    margin:0 0 var(--white-space);
+  } */
+
+  /* lijst met blokjes */
+/* ul {
+    margin:0;
+    padding:0;
+    
+    list-style:none;
+  }
+
+  img{
+    max-width: 100%;
+  } */
+
+  /* een blokje */
+  /* li {
+    background-color:var(--background-highlight-color);
+  } */
+
+  /* paragraaf 2 */
+  /* li:nth-of-type(1) {
+    /* --main-color:hsl(0 0% 60%);
+    --gradient-color:linear-gradient(45deg, navy, dodgerblue, deeppink, indigo);
+    --background-color:var(--main-color);
+    --shadow-color:hsl(0 0% 0% / .5);
+     */
+    /* display:grid;
+    place-content:center;
+    
+  } */
+
+  /* li:nth-of-type(2) {
+    display:grid;
+    place-content:center;
+    
+    overflow:hidden;
+  } */
+
+
+
+  *, *::after, *::before {
+    box-sizing:border-box;  
+  }
+  
+  body {
+    margin:0;
+    padding:1em;
+    font-size:1.5em;
+    font-weight:bold;
+  }
+
+  body > * {
+    border-radius:1em;
+    color:white;
+    display:grid;
+    place-items:center;
+  }
+
+  header {
+    background-color:Crimson;
+    min-height:clamp(4em, 17vw, 6em);
+    font-size: 10vw;
+  }
+
+  header > h1{
+    margin: 0.5em;
+    align-items: center;
+  }
+
+  section:nth-of-type(1) {
+    background-color:MediumVioletRed;
+    min-height:max(10em, 33vw);
+
+}
+
+
+  section:nth-of-type(2) {
+    background-color:DarkMagenta;
+    min-height:max(10em, 33vw);
+  }
+  aside {
+    background-color:DarkViolet;
+    min-height:6em;
+  }
+
+  aside img{
+    display: block;
+    max-width: 100%;
+  }
+  footer {
+    background-color:BlueViolet;
+    min-height:4em;
+  }
+
+  body {
+    display:grid;
+    gap:.67em;
+    
+    grid-template-areas:
+        "header"
+      "section1" 
+      "section2" 
+      "aside"
+      "footer";
+  }
+
+  header { 
+    grid-area:header;
+  }
+
+  section:nth-of-type(1) {
+    grid-area:section1;
+  }
+  
+  section:nth-of-type(2) {
+    grid-area:section2;
+  }
+  
+  aside {
+    grid-area:aside;
+  }
+  
+  footer {
+    grid-area:footer;
+  }
+
+  @media (width>40em) {
+    body {
+      grid-template-columns:10em 1fr;
+      
+      grid-template-areas:
+        "header header"
+        "section1 section1" 
+        "aside  section2" 
+        "footer footer";
+    } 
+  }
